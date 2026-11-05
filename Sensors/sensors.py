@@ -10,6 +10,17 @@
 
 # definition for some sensor function
 # define as many functions as needed to use submodules
+
+# placeholder library for SR-04 sensors
+# placeholder GPIO pin that will be replaced once we actually assemble the electronics
+from usedgpiopin import DistanceSensor
+
+sensor = DistanceSensor(pin1, pin2)
+
+# while loop for printing real-time distance data to the terminal
+while True:
+    print("Distance to object/payload: ", sensor.distance, " m")
+
 def sensor_function1(parameters):
     dummy_variable = parameters
     # insert code here
